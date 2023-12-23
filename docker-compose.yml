@@ -1,0 +1,9 @@
+version: '1'
+services:
+  web:
+    build: .
+    command: ./init_and_run.sh
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "5000:5000"
