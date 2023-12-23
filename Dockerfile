@@ -3,5 +3,4 @@ WORKDIR /usr/src/app
 COPY . .
 RUN pip install Flask
 EXPOSE 5000
-CMD ["flask", "--app", "flaskr", "run", "--debug", "--host=0.0.0.0"]
-# CMD ["python", "hello.py"]
+CMD ["sh", "init_and_run.sh"]
