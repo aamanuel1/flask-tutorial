@@ -13,7 +13,7 @@ def get_db():
         #return rows as dictionaries.
         g.db.row_factory = sqlite3.Row
 
-        return g.db
+    return g.db
     
 def close_db(e=None):
     #pop the database off the stack and if it exists, stop.
